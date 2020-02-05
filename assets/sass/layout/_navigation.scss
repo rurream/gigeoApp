@@ -1,0 +1,15 @@
+nav{
+    background: $blanco;
+    box-sizing: content-box;
+
+    .container-fluid{
+        
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .navbar-brand{
+        font-size: $xl!important;
+    }
+    }
+    
+}
