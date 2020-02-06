@@ -9875,14 +9875,28 @@ h3 {
     border-color: #dee2e6;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  color: #000;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 700;
+}
+
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background: #fff;
 }
-
-.central {
+body .central {
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -9894,9 +9908,29 @@ nav {
 nav .container-fluid, nav .container-sm, nav .container-md, nav .container-lg, nav .container-xl {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
-nav .container-fluid .navbar-brand, nav .container-sm .navbar-brand, nav .container-md .navbar-brand, nav .container-lg .navbar-brand, nav .container-xl .navbar-brand {
+nav .container-fluid .nav_logo a, nav .container-sm .nav_logo a, nav .container-md .nav_logo a, nav .container-lg .nav_logo a, nav .container-xl .nav_logo a {
   font-size: 3rem !important;
+}
+nav .container-fluid .nav_logo a span sup, nav .container-sm .nav_logo a span sup, nav .container-md .nav_logo a span sup, nav .container-lg .nav_logo a span sup, nav .container-xl .nav_logo a span sup {
+  font-size: 0.5rem;
+  vertical-align: super;
+}
+nav .container-fluid .navBarOpciones, nav .container-sm .navBarOpciones, nav .container-md .navBarOpciones, nav .container-lg .navBarOpciones, nav .container-xl .navBarOpciones {
+  width: 100%;
+  text-align: right;
+}
+nav .container-fluid .navBarOpciones ul, nav .container-sm .navBarOpciones ul, nav .container-md .navBarOpciones ul, nav .container-lg .navBarOpciones ul, nav .container-xl .navBarOpciones ul {
+  margin-left: auto;
+  margin-right: 0px;
+  text-align: right;
+}
+nav .container-fluid .navBarOpciones ul li, nav .container-sm .navBarOpciones ul li, nav .container-md .navBarOpciones ul li, nav .container-lg .navBarOpciones ul li, nav .container-xl .navBarOpciones ul li {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .header {
@@ -9930,23 +9964,90 @@ nav .container-fluid .navbar-brand, nav .container-sm .navbar-brand, nav .contai
   height: auto;
   margin: auto 2rem;
 }
-.header .central .cabeceraArticulo .cabeceraArticuloBtn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding: auto 2rem;
+.header .central .cabeceraArticulo .cabeceraArticuloImg div h3 {
+  color: #000;
 }
-.header .central .cabeceraArticulo .cabeceraArticuloBtn div {
-  padding: 0.5rem;
+.header .central .cabeceraArticulo .cabeceraArticuloImg div h6 {
+  color: gray;
+}
+.header .central .cabeceraArticulo .cabeceraArticuloBtn {
+  display: none;
 }
 
-main {
-  margin-top: 5rem;
+@media (min-width: 576px) {
+  .header {
+    border-bottom: 0.0625rem solid gray;
+  }
+  .header .cabecera {
+    margin-top: 7.5rem;
+    background-image: url("../img/image-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 15rem;
+  }
+  .header .central .cabeceraArticulo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .header .central .cabeceraArticulo .cabeceraArticuloImg {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header .central .cabeceraArticulo .cabeceraArticuloImg .cabeceraArticuloImg-Redonda {
+    width: 5rem;
+    height: auto;
+    margin: auto 2rem;
+  }
+  .header .central .cabeceraArticulo .cabeceraArticuloImg div h3 {
+    color: #000;
+  }
+  .header .central .cabeceraArticulo .cabeceraArticuloImg div h6 {
+    color: gray;
+  }
+  .header .central .cabeceraArticulo .cabeceraArticuloBtn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: auto 2rem;
+  }
+  .header .central .cabeceraArticulo .cabeceraArticuloBtn div {
+    padding: 0.5rem;
+  }
+}
+main .centralTit {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+main .centralTit h4 {
+  margin-left: 2rem;
 }
 main .centralTarjetas .tarjetasCard .cardImg {
   width: 90%;
   height: auto;
+}
+main .centralTarjetas .tarjetasCard p {
+  text-align: left;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .centralTarjetas .tarjetasCard p.tarjetasCardTexto-grande {
+  padding-top: 0.6rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+main .centralTarjetas .tarjetasCard p.tarjetasCardTexto-chico {
+  color: gray;
 }
 
 /*# sourceMappingURL=style.css.map */

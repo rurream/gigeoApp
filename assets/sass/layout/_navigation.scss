@@ -1,15 +1,48 @@
-nav{
-    background: $blanco;
-    box-sizing: content-box;
+nav {
+  background: $blanco;
+  box-sizing: content-box;
 
-    .container-fluid{
-        
+  .container-fluid {
     padding-top: 1rem;
     padding-bottom: 1rem;
-
-    .navbar-brand{
-        font-size: $xl!important;
-    }
-    }
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     
+    .nav_logo{
+       
+        a{
+            font-size: $xl !important;
+            
+            span{
+                sup{
+                    font-size: $sm;
+                    vertical-align: super;
+                }
+            }
+            
+        }
+    }
+
+    
+    .navBarOpciones{
+        width: 100%;
+        text-align: right;
+        
+
+        ul{
+            margin-left: auto;
+            margin-right: 0px;
+            text-align: right;
+
+            li{
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+  }
 }
+
+
+

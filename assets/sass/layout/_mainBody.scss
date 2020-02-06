@@ -1,17 +1,37 @@
 main{
-    margin-top: 5rem;
+    
     
     .centralTit{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
 
+        h4{
+            margin-left: 2rem;
+        }
     }
     .centralTarjetas{
 
         .tarjetasCard{
-
-
+            
             .cardImg{
                 width: 90%;
                 height: auto;
+            }
+
+            p{
+                text-align: left;
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
+
+                &.tarjetasCardTexto-grande{
+                    padding-top: 0.6rem;
+                    font-weight: $bold;
+                    margin-bottom: 0;
+                }
+                &.tarjetasCardTexto-chico{
+                    color: $gris;
+                }
             }
         }
     }
